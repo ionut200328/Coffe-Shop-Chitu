@@ -9,7 +9,8 @@ import { ItemsInterface } from 'src/app/services/items.interface';
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss']
-})
+})  
+
 export class CartComponent implements OnInit {
 
   orderedItems: ItemsInterface[] = [];
