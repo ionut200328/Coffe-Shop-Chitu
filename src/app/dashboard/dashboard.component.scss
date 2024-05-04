@@ -3,7 +3,13 @@
     align-items: center;
 }
 
-.viewport {
+.viewportC {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* This will hide the scrollbar in Firefox */
+}
+
+.viewportD {
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: none; /* This will hide the scrollbar in Firefox */

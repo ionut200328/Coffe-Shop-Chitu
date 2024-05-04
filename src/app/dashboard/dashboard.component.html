@@ -5,23 +5,23 @@
     <h1 class="coffee-specialties__title">Our Specialties</h1>
 </div>
 <div class="coffee-card-slider">
-    <button (click)="scrollLeft()" class="scroll-button">←</button>
-    <div class="viewport">
+    <button (click)="scrollLeftC()" class="scroll-button">←</button>
+    <div class="viewportC">
         <div class="coffee-card-container">
             <app-coffee-card *ngFor="let coffeeFromArray of coffees" [coffee]="coffeeFromArray"></app-coffee-card>
         </div>
     </div>
-    <button (click)="scrollRight()" class="scroll-button">→</button>
+    <button (click)="scrollRightC()" class="scroll-button">→</button>
 </div>
 <div class="dessert-specialties">
     <h1 class="dessert-specialties__title">Our Desserts</h1>
 </div>
 <div class="dessert-card-slider">
-    <button (click)="scrollLeft()" class="scroll-button">←</button>
-    <div class="viewport">
+    <button (click)="scrollLeftD()" class="scroll-button">←</button>
+    <div class="viewportD">
         <div class="dessert-card-container">
             <app-dessert-card *ngFor="let dessertFromArray of desserts" [dessert]="dessertFromArray"></app-dessert-card>
         </div>
     </div>
-    <button (click)="scrollRight()" class="scroll-button">→</button>
+    <button (click)="scrollRightD()" class="scroll-button">→</button>
 </div>

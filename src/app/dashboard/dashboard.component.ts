@@ -70,15 +70,29 @@ export class DashboardComponent implements OnInit {
     this.desserts = this.dessertService.searchDesserts(this.searchTerm.value);
   }
 
-  scrollLeft() {
-    const viewport = document.querySelector('.viewport');
+  scrollLeftC() {
+    const viewport = document.querySelector('.viewportC');
     if (viewport) {
       viewport.scrollBy({ left: -260, behavior: 'smooth' });
     }
   }
 
-  scrollRight() {
-    const viewport = document.querySelector('.viewport');
+  scrollRightC() {
+    const viewport = document.querySelector('.viewportC');
+    if (viewport) {
+      viewport.scrollBy({ left: 260, behavior: 'smooth' });
+    }
+  }
+
+  scrollLeftD() {
+    const viewport = document.querySelector('.viewportD');
+    if (viewport) {
+      viewport.scrollBy({ left: -260, behavior: 'smooth' });
+    }
+  }
+
+  scrollRightD() {
+    const viewport = document.querySelector('.viewportD');
     if (viewport) {
       viewport.scrollBy({ left: 260, behavior: 'smooth' });
     }
