@@ -1,5 +1,6 @@
 <div class="cart-icon" (click)="toggleCart()">
     🛒
+    <span *ngIf="orderedItems.length > 0" class="cart-item-count">{{ orderedItems.length }}</span>
 </div>
 <div class="cart-overlay" *ngIf="showCart">
     <div class="cart-items">
