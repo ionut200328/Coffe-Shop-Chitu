@@ -1,0 +1,75 @@
+/* dessert-card.component.scss */
+
+.dessert-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* This will make the cards wrap to the next line if the container width is not enough */
+    align-items: center;
+    justify-content: space-between; /* This will add space between the cards */
+    width: 200px;
+    height: 330px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    position: relative;
+}
+.dessert-card__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.dessert-card__image {
+    max-width: 100%;
+    max-height: 100%;
+    // make the image in a circle, not ellipse
+    border-radius: 50%;
+
+}
+
+.dessert-card__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.dessert-card__content {
+    padding: 16px;
+    height: 70%; /* Adjust as needed */
+    overflow: auto;
+}
+
+.dessert-card__description {
+    font-size: 14px;
+    color: #666666;
+    word-wrap: break-word;
+    white-space: pre-line; /* This will preserve line breaks and spaces */
+}
+
+.dessert-card__price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.dessert-card__button {
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: #ff5722;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+}
+
+.dessert-card__button:hover {
+    background-color: #e64a19;
+}

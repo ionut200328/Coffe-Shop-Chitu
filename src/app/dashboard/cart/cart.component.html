@@ -1,0 +1,28 @@
+<div class="cart-icon" (click)="toggleCart()">
+    🛒
+</div>
+<div class="cart-overlay" *ngIf="showCart">
+    <div class="cart-items">
+        <h1 class="cart__title">Your Cart</h1>
+        <div class="cart__total">
+            <h2>Total: {{ getTotalPrice() | currency }}</h2>
+            <button class="cart__checkout">Checkout</button>
+            <button class="cart__clear" (click)="clearCart()">Clear Cart</button>
+        </div>
+        <div class="cart__content">
+            <div class="cart__item" *ngFor="let items of orderedItems; let i = index">
+                <div class="cart__item__image-container">
+                    <img [src]="items.image" alt="items" class="cart__item__image">
+                </div>
+                <div class="cart__item__content">
+                    <div class="cart__item__details">
+                        <p class="cart__item__title"> {{ items.title }}</p>
+                        <p class="cart__item__price"> {{ items.price | currency }}</p>
+                        <button class="cart__remove" (click)="removeItem(i); $event.stopPropagation()">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

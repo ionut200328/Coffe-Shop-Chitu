@@ -1,0 +1,64 @@
+.coffee-card-slider {
+    display: flex;
+    align-items: center;
+}
+
+.viewport {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* This will hide the scrollbar in Firefox */
+}
+
+.coffee-card-container {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap; /* This will make the cards wrap to the next line if the container width is not enough */
+    justify-content: space-between; /* This will add space between the cards */
+    transition: transform 0.9s ease-out; /* This will add a smooth transition effect when the cards are moved */
+}
+
+.scroll-button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.coffee-specialties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.coffee-specialties__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.dessert-card-slider {
+    display: flex;
+    align-items: center;
+}
+
+.dessert-card-container {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap; /* This will make the cards wrap to the next line if the container width is not enough */
+    justify-content: space-between; /* This will add space between the cards */
+    transition: transform 0.9s ease-out; /* This will add a smooth transition effect when the cards are moved */
+}
+
+.dessert-specialties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.dessert-specialties__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}

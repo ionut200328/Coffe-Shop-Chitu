@@ -1,0 +1,13 @@
+<div class="dessert-card">
+    <div class="dessert-card__image-container">
+        <img [src]="dessert.image" alt="dessert" class="dessert-card__image">
+    </div>
+    <div class="dessert-card__content">
+        <h2 class="dessert-card__title">{{ dessert.title }}</h2>
+        <p class="dessert-card__description">{{ dessert.description }}</p>
+        <div class="dessert-card__price">
+            <p>{{ dessert.price | currency }}</p>
+            <button class="dessert-card__button" (click)="order()">Order</button>
+        </div>
+    </div>
+</div>

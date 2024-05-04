@@ -1,0 +1,14 @@
+<div class="coffee-card">
+    <div class="coffee-card__image-container">
+        <img [src]="coffee.image" alt="coffee" class="coffee-card__image">
+    </div>
+    <div class="coffee-card__content">
+        <h2 class="coffee-card__title">{{ coffee.title }}</h2>
+        <button (click)="navigateToCoffeePage()">Details</button>
+        <p class="coffee-card__description">{{ coffee.description }}</p>
+        <div class="coffee-card__price">
+            <p>{{ coffee.price | currency }}</p>
+            <button class="coffee-card__button" (click)="order()">Order</button>
+        </div>
+    </div>
+</div>
